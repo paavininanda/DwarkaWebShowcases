@@ -1,0 +1,203 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+	<meta charset="UTF-8"> 
+	<title>
+		Flappy Birds
+	</title>
+	<style>
+		body{
+			background-color: #71C5CF;
+		}
+		html { overflow-x: hidden; }
+
+		.bg{
+		 	background-image:url('background.png');
+		 	background-repeat: repeat-x;
+		 	background-size: 500px 500px;
+		 	position: relative;
+		 	height: 500px;
+		 	/*z-index: 100*/
+		 	/*height: 500px;*/
+		
+
+
+		 }
+		 
+		.loader{
+			background-image: url('pipe.png');
+			position: relative;
+			background-repeat: no-repeat;
+			z-index: 100;
+			animation-name: shape;
+			animation-iteration-count: infinite;
+			-webkit-animation-timing-function: linear;
+			animation-duration: 10s
+
+		}
+		#zero{
+		 	background-size: 100px 200px;
+		 	height:200px;
+		 	margin-top:180px;
+			top:148px;
+		 }
+		 #one{
+		 	    background-size: 100px 250px;
+			    height: 250px;
+			    margin-top: 180px;
+			    animation-name: one;
+			    /* margin-left: 200px; */
+			    top: -282px;
+			    /*left: 297px;*/
+		 }
+		 #two{
+		 	    background-size: 100px 180px;
+			    height: 180px;
+			    margin-top: 180px;
+			    animation-name: two;
+			    /*margin-left: 200px;*/
+			    top: -642px;
+			    
+		 }
+		 #three{
+		 	    background-size: 100px 300px;
+			    height: 300px;
+			    margin-top: 180px;
+			    animation-name: three;
+			    /*margin-left: 200px;*/
+			    top: -1122px;
+			    
+		 }
+		 #four{
+		 	    background-size: 100px 280px;
+			    height: 280px;
+			    margin-top: 180px;
+			    animation-name: four;
+			    /*margin-left: 200px;*/
+			    top: -1582px;
+			    
+		 }
+		.clloader{
+			background-image: url(cl.png);
+		    position: relative;
+		    background-repeat: no-repeat;
+		    z-index: 100;
+		    animation-name: shapex;
+		    animation-iteration-count: infinite;
+		    -webkit-animation-timing-function: linear;
+		    animation-duration: 10s;
+		    background-size: 366px 235px;
+		    height: 300px;
+		    margin-top: 180px;
+		    /* margin-left: 200px; */
+		    top: -2300px;
+		    left: 1200px;
+		}
+		@keyframes shape{
+			0%{
+				transform:translateX(0%);
+			}
+			100%{
+				transform:translateX(100%);
+			}
+
+		}
+		@keyframes one{
+			0%{
+				transform:translateX(20%);
+			}
+			80%{
+				transform:translateX(100%);
+			}
+			80.01%{
+				transform:translateX(0.01%);
+			}
+			100%{
+				transform:translateX(20%);
+			}
+
+		}
+		@keyframes two{
+			0%{
+				transform:translateX(40%);
+			}
+			60%{
+				transform:translateX(100%);
+			}
+			60.01%{
+				transform:translateX(0.01%);
+			}
+			100%{
+				transform:translateX(40%);
+			}
+
+		}
+		@keyframes three{
+			0%{
+				transform:translateX(60%);
+			}
+			40%{
+				transform:translateX(100%);
+			}
+			40.01%{
+				transform:translateX(0.01%);
+			}
+			100%{
+				transform:translateX(60%);
+			}
+
+		}
+		@keyframes four{
+			0%{
+				transform:translateX(80%);
+			}
+			20%{
+				transform:translateX(100%);
+			}
+			20.01%{
+				transform:translateX(0.01%);
+			}
+			100%{
+				transform:translateX(80%);
+			}
+
+		}
+		@keyframes shapex{
+			0%{
+				transform:translateX(-0%);
+			}
+			1%{
+				transform:translateX(-1%);
+			}
+			100%{
+				transform:translateX(-100%);
+			}
+
+		}
+
+	</style>
+</head>
+
+<body>
+	<div class="bg">
+		<div class="loader" id="zero">
+
+		</div>
+		<div class="loader" id="one">
+
+		</div>
+		<div class="loader" id="two">
+
+		</div>
+		<div class="loader" id="three">
+
+		</div>
+		<div class="loader" id="four">
+
+		</div>
+		<div class="clloader">
+
+		</div>
+	</div>
+</body>
+</html>
